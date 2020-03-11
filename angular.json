@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "isa-app": {
+    "isa-at-tech": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/isa-app",
+            "outputPath": "dist/isa-at-tech",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "isa-app:build"
+            "browserTarget": "isa-at-tech:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "isa-app:build:production"
+              "browserTarget": "isa-at-tech:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "isa-app:build"
+            "browserTarget": "isa-at-tech:build"
           }
         },
         "test": {
@@ -108,11 +108,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "isa-app:serve"
+            "devServerTarget": "isa-at-tech:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "isa-app:serve:production"
+              "devServerTarget": "isa-at-tech:serve:production"
             }
           }
         },
@@ -123,7 +123,7 @@
       }
     }
   },
-  "defaultProject": "isa-app",
+  "defaultProject": "isa-at-tech",
   "cli": {
     "analytics": "772b1a4d-e096-4445-a7b9-2d082e991001"
   }
